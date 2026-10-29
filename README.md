@@ -25,6 +25,44 @@ MOSFET. The LEDs run from the 12 V battery (3S LiPo).
 
 Ready-to-upload Gerber ZIPs are attached to the [latest release](../../releases/latest).
 
+## How to order
+
+Any PCB maker works (JLCPCB, PCBWay, Aisler, Elecrow, ...). Pick the one you like, prices
+differ more by shipping than by the board.
+
+**1. Board only (THT or SMD version)**
+1. Download the Gerber ZIP of your version from the [release](../../releases/latest):
+   `Heck_LED_THT_Gerber.zip` or `Heck_LED_SMD_Gerber.zip`.
+2. Upload the ZIP **as it is**. Don't unpack it, the maker reads the outline, size and layers from it.
+3. Settings: keep the defaults. If asked:
+
+   | Option | Value |
+   |---|---|
+   | Layers | 2 |
+   | Thickness | 1.6 mm |
+   | Material | FR-4 |
+   | Copper | 1 oz |
+   | Surface finish | HASL (lead-free if you prefer), ENIG also fine |
+   | Solder mask / silkscreen color | any |
+   | Quantity | the minimum (usually 5), one board per tailgate |
+
+   Some makers print an order number on the board. You can usually remove it for a small fee or leave it, it's on the back.
+4. Solder the parts yourself (see [Parts per tailgate](#parts-per-tailgate) and `BOM.csv`).
+
+**2. Board with SMD parts already assembled (SMD version only)**
+
+Order like above, then switch on the maker's assembly service ("PCB Assembly", "SMT", ...) and upload two more files from `2_SMD_factory_assembled`:
+
+| File | What the maker calls it |
+|---|---|
+| `JLCPCB_BOM.csv` | BOM / bill of materials. Columns: value, designators, footprint, LCSC part number |
+| `JLCPCB_CPL.csv` (JLCPCB) or `pick_and_place_generic.csv` (others) | CPL / centroid / pick and place / position file |
+
+- Assembly side: **Bottom**. All SMD parts sit on the back, the LEDs are on the front.
+- In the preview, check that the four SOT-23 MOSFETs (Q1–Q4) sit with their three pins on the three pads. If they're rotated, turn them in the preview tool.
+- The LCSC numbers match JLCPCB's parts library. With other makers, use them to look up the part (value + package is all that matters: 0603 resistors 1 %, 2N7002 in SOT-23).
+- Afterwards you still solder the 8 LEDs and the 2 connectors by hand.
+
 ## Two versions, same circuit and outline
 
 | Folder | Version |
