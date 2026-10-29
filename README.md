@@ -132,6 +132,12 @@ light module: those are switched to ground and carry 12 V.
 
 DRC: 0 unconnected pads. The remaining warnings are silkscreen overlaps only.
 
+## Questions & help
+
+Stuck somewhere or found a problem? Leave a comment on
+[MakerWorld](https://makerworld.com/de/collections/37654355-bobcat-an3drc-skid-steer) or open an
+[issue](../../issues) here, and I'll get back to you when I can.
+
 ## License
 
 PCB design: [CC BY-NC 4.0](LICENSE). Build it, modify it and share it, as long as you credit
