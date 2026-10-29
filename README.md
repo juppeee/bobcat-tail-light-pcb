@@ -1,5 +1,7 @@
 # Tail Light PCB for the AN3DRC Skid Steer Loader
 
+<p align="center"><img src="Images/Skid_Steer_Loaders.jpg" width="420" alt="Two AN3DRC skid steer loaders"></p>
+
 PCB for working tail, brake and reverse lights in the tailgate of the
 AN3DRC 3D-printed RC Tracked Skid Steer Loader.
 
