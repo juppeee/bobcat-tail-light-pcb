@@ -49,6 +49,23 @@ Battery minus and Pro Micro GND must be connected.
 
 LED marking: `+` = anode (outer, long leg), `−` = cathode (inner, square pad, flat side).
 
+## Works with the original AN3DRC light module sketch
+
+No extra firmware needed. The board expects one 5 V signal per channel (HIGH = on), which is
+exactly what the original AN3DRC sketch outputs:
+
+| Original sketch | Pro Micro pin | PCB |
+|---|---|---|
+| `light` (light switch channel) | A0 (18) | K1 + K2 (tail lights) |
+| `rev1` (both tracks reversing) | 4 | K4 (reverse lights) |
+| – | GND | GND |
+
+The original sketch has no brake light. Either leave K3 unconnected, or put it on A0 as well
+so the inner red LEDs glow as tail lights too.
+
+**Take the signal directly from the Pro Micro pin**, not from the lamp outputs of the original
+light module: those are switched to ground and carry 12 V.
+
 ## Parts per tailgate
 
 | Part | Qty |
@@ -61,3 +78,7 @@ LED marking: `+` = anode (outer, long leg), `−` = cathode (inner, square pad, 
 | THT only: resistors 1/4 W: 1.5 k ×4, 680 ×2, 1 k ×6, 100 k ×4 | |
 
 DRC: 0 unconnected pads. The remaining warnings are silkscreen overlaps only.
+
+## License
+
+[CC BY 4.0](LICENSE): use, modify and share, also commercially, as long as you credit juppeee.
