@@ -10,6 +10,12 @@ AN3DRC 3D-printed RC Tracked Skid Steer Loader.
 > **[buy it on Cults3D](https://cults3d.com/de/modell-3d/spiel/3d-printed-rc-tracked-skid-steer-loader-in-1-8-5-scale-by-an3drc-an3drc_construction)**.
 > This repo only adds the tail light PCB.
 
+> [!TIP]
+> **Where to get the board:** I ordered mine from **[JLCPCB](https://jlcpcb.com)**. It worked
+> very well and wasn't expensive. Upload the Gerber ZIP from the
+> [release](../../releases/latest) and keep the default settings, that's it.
+> Any other PCB maker works too, see [How to order](#how-to-order).
+
 **Print files (tailgate frame, bezel, LED housings, lenses) and assembly: [MakerWorld](https://makerworld.com/de/collections/37654355-bobcat-an3drc-skid-steer)**
 
 ![PCB, LED side](Images/THT_angled_LEDs.png)
