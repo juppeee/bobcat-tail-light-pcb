@@ -1,11 +1,18 @@
 # Tail Light PCB for the AN3DRC Skid Steer Loader
 
 PCB for working tail, brake and reverse lights in the tailgate of the
-[AN3DRC 3D-printed RC Tracked Skid Steer Loader](https://cults3d.com/de/modell-3d/spiel/3d-printed-rc-tracked-skid-steer-loader-in-1-8-5-scale-by-an3drc-an3drc_construction).
+AN3DRC 3D-printed RC Tracked Skid Steer Loader.
+
+> **The skid steer loader is not my design.** The original model, including the tailgate and
+> the light module sketch, is by **Andrew (AN3DRC)**. You need his model to build this:
+> **[buy it on Cults3D](https://cults3d.com/de/modell-3d/spiel/3d-printed-rc-tracked-skid-steer-loader-in-1-8-5-scale-by-an3drc-an3drc_construction)**.
+> This repo only adds the tail light PCB.
 
 **Print files (tailgate frame, bezel, LED housings, lenses) and assembly: [MakerWorld](https://makerworld.com/de/collections/37654355-bobcat-an3drc-skid-steer)**
 
 ![PCB, LED side](Images/THT_angled_LEDs.png)
+
+**[View the assembled PCB in 3D](3D/Tail_Light_PCB_THT.stl)** (GitHub shows an interactive viewer: rotate, zoom)
 
 Board: 134 × 30 mm, 2 layers, 1.6 mm. 8 LEDs (3 mm) on the front facing the tailgate, all
 other parts on the back. 4 mounting holes 2.2 mm (M2 or 2.2 mm self-tapping screws, max. 5 mm long).
@@ -81,4 +88,8 @@ DRC: 0 unconnected pads. The remaining warnings are silkscreen overlaps only.
 
 ## License
 
-[CC BY 4.0](LICENSE): use, modify and share, also commercially, as long as you credit juppeee.
+PCB design: [CC BY-NC 4.0](LICENSE). Build it, modify it and share it, as long as you credit
+juppeee. **No commercial use**: don't sell boards, kits or assembled parts.
+
+The skid steer loader itself, its tailgate and the light module sketch belong to AN3DRC and
+are not covered by this license.
